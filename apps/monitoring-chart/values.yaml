@@ -46,7 +46,18 @@ grafana:
   rbac:
     create: false
 
-  adminPassword: admin
+  # Do not hardcode the admin password in Git. Source it from a
+  # pre-created secret in the "monitoring" namespace, e.g.:
+  #
+  #   kubectl create secret generic grafana-admin \
+  #     -n monitoring \
+  #     --from-literal=admin-user=admin \
+  #     --from-literal=admin-password="$GRAFANA_ADMIN_PASSWORD"
+  #
+  admin:
+    existingSecret: grafana-admin
+    userKey: admin-user
+    passwordKey: admin-password
   defaultDashboardsEnabled: true
 
 # ------------------------
