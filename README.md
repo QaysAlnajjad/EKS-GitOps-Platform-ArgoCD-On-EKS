@@ -444,9 +444,7 @@ This repository assumes the EKS cluster already exists.
 
 Infrastructure provisioning is handled separately in:
 
-```text
-eks-infrastructure
-```
+[EKS-Infrastructure-Platform-Terraform-AWS](https://github.com/QaysAlnajjad/EKS-Infrastructure-Platform-Terraform-AWS)
 
 In short:
 
