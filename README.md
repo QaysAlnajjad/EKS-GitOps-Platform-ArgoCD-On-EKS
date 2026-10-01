@@ -25,7 +25,7 @@ This repository is the declarative source of truth for in-cluster applications a
 
 ## Overview
 
-This repository manages the Kubernetes layer after `eks-infrastructure` has:
+This repository manages the Kubernetes layer after `github.com/QaysAlnajjad/EKS-Infrastructure-Platform-Terraform-AWS/blob/main/README.md` has:
 
 - provisioned the EKS cluster
 - installed ArgoCD
