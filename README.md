@@ -89,7 +89,6 @@ eks-gitops-apps/
 │   │   ├── app.yaml
 │   │   ├── deployment.yaml
 │   │   ├── kustomization.yaml
-│   │   ├── secret.yaml
 │   │   └── service.yaml
 │   └── kustomization.yaml
 └── README.md
